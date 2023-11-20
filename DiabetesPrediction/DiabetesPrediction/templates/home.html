@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+        div{
+        color:white;
+        }
+        h1{
+          color:white;
+           font-family: "Times New Roman", Times, serif;
+
+        }
+        body{
+
+        background-image:url("{% static '\DiabetesPrediction\images\heart.jpg'%}");
+        }
+        .animate-character
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 90px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+        input[type = submit]{
+        background-color: #4dc3ff;
+        border:2px;
+        color:white;
+        padding:16px 32px;
+        cursor:pointer;
+        margin-top:15px;
+        size:45px;
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div align='center'>
+    <h1 class="animate-character">
+       <b>WELCOME TO DIABETES PREDICTION SYSTEM
+</b>
+    </h1>
+    <form action="predict">
+        <input type="submit" value="Let's get started">
+
+    </form>
+
+</div>
+
+</body>
+</html>
